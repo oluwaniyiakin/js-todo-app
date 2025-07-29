@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate JavaScript To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📋 Ultimate To-Do List</h1>
+      <button id="toggleDarkMode">🌙 Toggle Dark Mode</button>
+    </header>
+
+    <section id="controls">
+      <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="What do you need to do?" required />
+        <input type="date" id="dueDate" />
+        <select id="priority">
+          <option value="low">🟢 Low</option>
+          <option value="medium">🟡 Medium</option>
+          <option value="high">🔴 High</option>
+        </select>
+        <input type="text" id="category" placeholder="Category (e.g., Work, Personal)" />
+        <button type="submit">➕ Add Task</button>
+      </form>
+
+      <div id="searchFilter">
+        <input type="text" id="searchInput" placeholder="🔍 Search tasks..." />
+        <select id="statusFilter">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="active">Active</option>
+        </select>
+        <select id="priorityFilter">
+          <option value="all">All Priorities</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="progressSection">
+      <p id="progressText">Progress: 0/0</p>
+      <progress id="progressBar" value="0" max="100"></progress>
+    </section>
+
+    <section id="taskListContainer">
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+
+    <section id="importExport">
+      <button id="exportTasks">📤 Export Tasks</button>
+      <input type="file" id="importTasks" />
+      <button id="undoButton">↩️ Undo Last Action</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>Created by Oluwaniyi Akin Oladapo | CSE 310 - JavaScript Module</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
