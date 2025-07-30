@@ -4,7 +4,7 @@ This project is a fully interactive To-Do List web application built using JavaS
 
 As a software engineer in training, my purpose for writing this software was to explore the core capabilities of JavaScript as a language — including its syntax, event-driven nature, and built-in array functions. I also wanted to practice integrating third-party libraries and writing clean, modular, and maintainable front-end code.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtube.com/shorts/QW2Rqo02CLQ?si=Uoa9w9n31O36DOJq)
 
 # Development Environment
 
@@ -31,3 +31,10 @@ As a software engineer in training, my purpose for writing this software was to 
 - Improve accessibility (keyboard support and ARIA labels)
 - Add due dates and task priorities
 - Implement light/dark theme toggle
+
+✅ Progress Bar
+✅ Dark Mode Toggle
+✅ Undo Last Action
+✅ Import/Export JSON Tasks
+✅ Sortable List (Drag & Drop)
+✅ Footer with Creator Inf
